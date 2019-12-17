@@ -34,7 +34,7 @@ int main()
       }
     }
   }
-  for(int k = 0; k <= j;k++){
+  for(int k = 0; k < j;k++){
     printf("%s\n",dic[k].answer);
   }
   return 0;
@@ -49,7 +49,6 @@ void Insert(char *str){
 int Find(char *str){
   for(int i = 0; i < word_cnt + 1; i++){
     if(strcmp(dic[i].word,str) == 0) return 1;
-    printf("%s\n",dic[i].word);
   }
   return 0;
 }
